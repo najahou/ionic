@@ -1,0 +1,18 @@
+<ion-menu contentId="content">
+  <ion-header>
+    <ion-toolbar color="warning">
+      <ion-title>AppGeo Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-menu-toggle *ngFor="let i of menu">
+      
+      <ion-item (click)="onMenuItem(i)">
+        <ion-icon [name]="i.icon" slot="start"></ion-icon>
+        <ion-label>{{i.title}}</ion-label>
+      </ion-item>
+
+    </ion-menu-toggle>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="content"></ion-router-outlet>

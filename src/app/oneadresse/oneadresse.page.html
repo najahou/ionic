@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Search one Adresse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+<form #f="ngForm" (ngSubmit)="onSearch(f.value)" style="margin-top: 50px; width: 400px;" class="form-group">
+  <input type="text"  placeholder="longitude" ngModel name="city" class="form-control">
+  <ion-button type="submit" color="danger" >Search</ion-button>
+</form>
+
+
+
+<div id="container" style="
+text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;"> 
+</div>
+</ion-content>

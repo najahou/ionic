@@ -20,6 +20,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
+
+              {
+                "glob": "**/*",
+                "input": "node_modules/@arcgis/core/assets",
+                "output": "/assets/"
+              },
+              
               {
                 "glob": "**/*",
                 "input": "src/assets",
@@ -30,9 +37,13 @@
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
               }
+              
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": []
+            "styles": ["src/theme/variables.scss", "src/global.scss", "src/assets/css/bootstrap.min.css"            
+            
+            ],
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
